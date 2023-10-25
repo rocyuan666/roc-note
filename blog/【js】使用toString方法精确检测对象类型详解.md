@@ -1,7 +1,7 @@
 准确的说他是通过Object.prototype.toString.call(xxx)来检测对象类型的。
 ## 如何进行检测
 先看下MDN上的概念，当然MDN下面也有说到使用它来检测对象类型。mdn地址：[https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/toString](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/toString)
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628841946240-1ca183b0-2e24-443e-a91b-a4dc982a8d5f.png#clientId=u0ad8a0d3-e754-4&from=paste&id=uc27ff9b8&originHeight=206&originWidth=730&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=ud10f803c-1e1f-4c4c-b6f0-f6a5ae4ae74&title=)
+![](assets/【js】使用toString方法精确检测对象类型详解/1.png)
 也就是说它返回的是字符串，如下：
 ```javascript
 const roc = []
@@ -43,7 +43,7 @@ Array.prototype.toString.call(arr),打印与arr.toString()一样
 console.log(Array.prototype) // 打印如下图
 ```
 代码第二行中是用的这个toString方法
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628841946185-63885fce-d655-4c3e-94fd-a371218e1dd0.png#clientId=u0ad8a0d3-e754-4&from=paste&id=u3d316f5d&originHeight=560&originWidth=467&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u9500f191-b873-4bda-aa66-d10b7c02925&title=)
+![](assets/【js】使用toString方法精确检测对象类型详解/2.png)
 那如果我们从 arr数组对象 根据原型链的思路找下去找到Object，使用它原型里的toString试试看
 ```javascript
 const arr = [1, 2]
@@ -59,7 +59,7 @@ console.log(arr.__proto__.constructor.prototype.__proto__.constructor)
 */
 ```
 如图打印通过原型链找到的 Object构造方法
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628841946313-72f577e5-9939-484e-9820-12776e37d964.png#clientId=u0ad8a0d3-e754-4&from=paste&id=u81d626ef&originHeight=67&originWidth=294&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u962fceb9-3bd6-4651-93ee-a51a985fb98&title=)
+![](assets/【js】使用toString方法精确检测对象类型详解/3.png)
 上面我们已经从 arr对象 通过原型链一路追杀到了Object，那么我们就可以使用开头提到的Object.proptotype.toString了，还是看代码
 ```javascript
 /*
@@ -69,7 +69,7 @@ arr.__proto__.constructor.prototype.__proto__.constructor 等于 Object
 console.log(arr.__proto__.constructor.prototype.__proto__.constructor.prototype.toString.call(arr))
 console.log(Object.prototype.toString.call(arr))
 ```
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628841946268-30765bec-1213-4d88-81b6-1c89965426db.png#clientId=u0ad8a0d3-e754-4&from=paste&id=ue0403f3e&originHeight=160&originWidth=859&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u029ce398-f222-4abf-9b32-b11b5c805dd&title=)
+![](assets/【js】使用toString方法精确检测对象类型详解/4.png)
 ## 验证删除Array原型上的toString方法后直接使用
 在原型链的理论上我们把Array原型上的toString方法删除后就可以检测对象类型（因为这时候使用的就是Object原型上的toString）上代码：
 ```javascript
@@ -80,4 +80,4 @@ delete Array.prototype.toString
 // 删除后
 console.log(arr.toString())
 ```
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628841946431-11601fac-b863-440d-9ae7-abc5912ca526.png#clientId=u0ad8a0d3-e754-4&from=paste&id=uea3a80b2&originHeight=223&originWidth=305&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u75587746-c93f-4d1e-a638-44eae1a6920&title=)
+![](assets/【js】使用toString方法精确检测对象类型详解/5.png)

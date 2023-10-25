@@ -93,7 +93,7 @@ React 中，可变状态（mutable state）通常保存在组件的 state 属性
 1. 渲染的组件
 2. 需要插入的DOM节点
 3. 渲染后的回调（但是一般用不到，所以可不传）
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628838250486-b3660b5c-3612-45e7-acb8-9adebd453416.png#clientId=u8890d826-66e4-4&from=paste&id=u24363fc9&originHeight=123&originWidth=447&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=uce9ede0a-133f-4135-8e4e-4ad75c922f6&title=)
+![](assets/【react】jsx与渲染/1.png)
 ```javascript
 function App() {
   return(
@@ -117,4 +117,4 @@ const el = React.createElement(
   'Hello, world!'
 );
 ```
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628838250501-4b345b39-6963-4de7-90d3-4ae91a37bf63.png#clientId=u8890d826-66e4-4&from=paste&id=u9fbc5144&originHeight=214&originWidth=507&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u9b189b21-52fb-4e26-bef0-d32a40ff36a&title=)
+![](assets/【react】jsx与渲染/2.png)

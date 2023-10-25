@@ -8,8 +8,6 @@
 > - 掌握在IDEA中使用Tomcat插件
 > - 理解Servlet的执行流程和生命周期
 > - 掌握Servlet的使用和相关配置
-
-
 ## 1，Web概述
 
 ### 1.1 Web和JavaWeb的概念
@@ -388,7 +386,6 @@ Tomcat是绿色版,直接解压即可
 -  在D盘的software目录下，将`apache-tomcat-8.5.68-windows-x64.zip`进行解压缩，会得到一个`apache-tomcat-8.5.68`的目录，Tomcat就已经安装成功。
 注意，Tomcat在解压缩的时候，解压所在的目录可以任意，但最好解压到一个不包含中文和空格的目录，因为后期在部署项目的时候，如果路径有中文或者空格可能会导致程序部署失败。 
 -  打开`apache-tomcat-8.5.68`目录就能看到如下目录结构，每个目录中包含的内容需要认识下,
-![](assets/1627178815892.png#id=aQWyF&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 bin:目录下有两类文件，一种是以`.bat`结尾的，是Windows系统的可执行文件，一种是以`.sh`结尾的，是Linux系统的可执行文件。
 webapps:就是以后项目部署的目录
 到此，Tomcat的安装就已经完成。 
@@ -921,8 +918,6 @@ getServletInfo()和getServletConfig()这两个方法使用的不是很多，大�
 通过上面的学习，我们知道要想编写一个Servlet就必须要实现Servlet接口，重写接口中的5个方法，虽然已经能完成要求，但是编写起来还是比较麻烦的，因为我们更关注的其实只有service方法，那有没有更简单方式来创建Servlet呢?
 
 要想解决上面的问题，我们需要先对Servlet的体系结构进行下了解:
-
-![](assets/1627240593506.png#id=C2cD5&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=)
 
 因为我们将来开发B/S架构的web项目，都是针对HTTP协议，所以我们自定义Servlet,会通过继承HttpServlet
 

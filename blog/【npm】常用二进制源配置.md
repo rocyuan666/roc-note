@@ -25,9 +25,9 @@ sentrycli_cdnurl=https://npmmirror.com/mirrors/sentry-cli/
 # 配置
 `.npmrc`文件
 linux位置：/home/rocyuan(自己的用户)/.npmrc  （~/.npmrc）
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/2779910/1669260833298-7ef9b9c5-063f-4144-ab56-16bb385eee8d.png#averageHue=%230e0c0b&clientId=ueaf7985b-00a6-4&from=paste&height=238&id=qdtIZ&originHeight=238&originWidth=972&originalType=binary&ratio=1&rotation=0&showTitle=false&size=25671&status=done&style=none&taskId=u7a229a6f-ba7b-4119-85a6-4077241f05a&title=&width=972)
+![](assets/【npm】常用二进制源配置/1.png)
 windows位置：C:\Users\Administrator(自己的用户)\.npmrc
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/2779910/1669260716466-81fbb6d1-f4f3-47ad-9da1-e2ab99f2d57e.png#averageHue=%23f9f4f3&clientId=ueaf7985b-00a6-4&from=paste&height=169&id=ua594e29f&originHeight=169&originWidth=301&originalType=binary&ratio=1&rotation=0&showTitle=false&size=7265&status=done&style=none&taskId=u5968aa36-6c52-4647-9222-df30144b5fa&title=&width=301)
+![](assets/【npm】常用二进制源配置/2.png)
 ```bash
 registry=https://registry.npmmirror.com/
 sass_binary_site=https://npmmirror.com/mirrors/node-sass/

@@ -6,9 +6,9 @@ nginx.conf是整个nginx全局下的配置，在全局配置下引入单独站�
 include /www/server/panel/vhost/nginx/*.conf;
 ```
 配置时候注意层级
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/2779910/1660535714458-2193fff3-a280-4b89-baf3-c678d6ab12b6.png#clientId=u129058f1-bb10-4&from=paste&height=898&id=u42093039&originHeight=898&originWidth=692&originalType=binary&ratio=1&rotation=0&showTitle=false&size=48621&status=done&style=none&taskId=ufc18b18f-c799-4f9e-9bf4-117a29ff9ee&title=&width=692)
+![](assets/【nginx】站点单独配置/1.png)
 权限全是600（rw-------）
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/2779910/1660535038611-51fa6116-623e-4f68-8782-7fec35c542b7.png#clientId=uf5ba3246-aea9-4&from=paste&height=269&id=u7a798518&originHeight=269&originWidth=606&originalType=binary&ratio=1&rotation=0&showTitle=false&size=29173&status=done&style=none&taskId=ub1cb20d6-b80a-4f00-b243-6c65e38f3f6&title=&width=606)
+![](assets/【nginx】站点单独配置/2.png)
 *.conf文件示例
 ```
 server

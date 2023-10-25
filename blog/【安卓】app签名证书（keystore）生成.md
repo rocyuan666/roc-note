@@ -36,7 +36,7 @@ CN=rocyuan, OU=hendon, O=hd, L=shaanxi, ST=xian, C=CN是否正确?
         (如果和密钥库口令相同, 按回车):
 ```
 以上命令运行完成后就会生成证书，路径为“E:\roc”
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628841146908-ff6d4f4e-207f-4747-a392-d4e26d99b0d5.png#clientId=uc2c96fd6-7b5f-4&from=paste&id=ueeedee1b&originHeight=356&originWidth=446&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=ua51b507c-0a36-4478-a65c-80e2ff33b59&title=)
+![](assets/【安卓】app签名证书（keystore）生成/1.png)
 ## 查看证书信息
 可以使用keytool -list -v -keystore roc.keystore命令查看证书信息
 
@@ -87,4 +87,4 @@ KeyIdentifier [
 安装配置证书的应用，然后安装使用签名获取工具获取该应用的签名。
 工具下载地址参考：
 [https://developers.weixin.qq.com/doc/oplatform/Downloads/Android_Resource.html](https://developers.weixin.qq.com/doc/oplatform/Downloads/Android_Resource.html)
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628841148048-6c910cc6-6609-4c88-9d01-7c31a3536dcd.png#clientId=uc2c96fd6-7b5f-4&from=paste&id=u895956f8&originHeight=410&originWidth=289&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=ub34504f1-e495-4886-a882-a50bfc7ac96&title=)
+![](assets/【安卓】app签名证书（keystore）生成/2.png)

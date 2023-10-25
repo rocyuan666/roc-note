@@ -15,7 +15,7 @@ uniapp登录鉴权功能需要到第三方开发平台申请应用后获取相�
 
 微信开放平台地址：[https://open.weixin.qq.com/](https://open.weixin.qq.com/)
 **注册认证微信开放平台需要的资料：**
-![2021-03-01_152531.png](https://cdn.nlark.com/yuque/0/2021/png/2779910/1614583646220-27690800-8732-4b8f-bcc0-1b794eb9f972.png#height=2415&id=UGwL5&originHeight=2415&originWidth=1347&originalType=binary&ratio=1&rotation=0&showTitle=false&size=66966&status=done&style=none&title=&width=1347)
+![](assets/【记录】uniapp授权登录&支付/1.png)
 ### QQ授权登录
 QQ授权登录需要：腾讯QQ开放平台申请应用的AppID
 
@@ -24,9 +24,9 @@ QQ授权登录需要：腾讯QQ开放平台申请应用的AppID
 腾讯QQ开放平台地址：[https://connect.qq.com/](https://connect.qq.com/)
 **注册认证QQ开放平台需要的资料：**
 **公司接入：**
-![qq公司接入.png](https://cdn.nlark.com/yuque/0/2021/png/2779910/1614583888360-4819926a-7814-4f10-a35c-b316bdd3c723.png#height=1307&id=SOXDB&originHeight=1307&originWidth=1347&originalType=binary&ratio=1&rotation=0&showTitle=false&size=56257&status=done&style=none&title=&width=1347)
+![](assets/【记录】uniapp授权登录&支付/2.png)
 **个人接入：**
-![qq个人接入.png](https://cdn.nlark.com/yuque/0/2021/png/2779910/1614583908863-5bd5b22b-52c4-4557-a0dc-274c8f03acc0.png#height=1223&id=bvhJd&originHeight=1223&originWidth=1347&originalType=binary&ratio=1&rotation=0&showTitle=false&size=56496&status=done&style=none&title=&width=1347)
+![](assets/【记录】uniapp授权登录&支付/3.png)
 ### 新浪微博授权登录
 新浪微博授权登录需要：新浪微博平台应用appkey、appsecret、redirect_uri（授权回调页地址）
 
@@ -37,9 +37,9 @@ QQ授权登录需要：腾讯QQ开放平台申请应用的AppID
 新浪微博开放平台地址：[https://open.weibo.com/](https://open.weibo.com/)
 **注册认证微博开放平台需要的资料**
 **公司接入：**
-![微博公司.png](https://cdn.nlark.com/yuque/0/2021/png/2779910/1614584324612-382b0218-9cd9-4de2-810e-98e275c9babd.png#height=1347&id=YgC1m&originHeight=1347&originWidth=1347&originalType=binary&ratio=1&rotation=0&showTitle=false&size=80137&status=done&style=none&title=&width=1347)
+![](assets/【记录】uniapp授权登录&支付/4.png)
 **个人接入：**
-![微博个人.png](https://cdn.nlark.com/yuque/0/2021/png/2779910/1614584354965-185cc0a8-85fd-4131-8908-f451c5213254.png#height=1347&id=HfKL9&originHeight=1347&originWidth=1347&originalType=binary&ratio=1&rotation=0&showTitle=false&size=78222&status=done&style=none&title=&width=1347)
+![](assets/【记录】uniapp授权登录&支付/5.png)
 ### apple授权登录
 ios13+支持，App Store审核规范。
 ## 支付

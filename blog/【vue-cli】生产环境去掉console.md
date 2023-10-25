@@ -42,7 +42,7 @@ configureWebpack: (config) => {
 ```
 ## 为什么最终vue-cli配置是这样？
 按照上方 **按照文档的webpack配置** `config.optimization.minimizer[0]` 是 `TerserPlugin` 插件实例，实例对象属性文档暂未体现，只能查看源码
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/2779910/1677635942743-b0ffa2ca-3084-49dc-9af4-7df37f683392.png#averageHue=%23271f1e&clientId=u908ffef6-af7d-4&from=paste&height=868&id=u6de64603&originHeight=868&originWidth=730&originalType=binary&ratio=1&rotation=0&showTitle=false&size=96800&status=done&style=none&taskId=u9ecf6dcc-e7f0-42fe-9ca4-5d3fb7e43c5&title=&width=730)
+![](assets/【vue-cli】生产环境去掉console/1.png)
 # chainWebpack配置
 参考chainWebpack文档：[https://github.com/Yatoo2018/webpack-chain/tree/zh-cmn-Hans](https://github.com/Yatoo2018/webpack-chain/tree/zh-cmn-Hans)
 ```javascript

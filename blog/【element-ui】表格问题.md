@@ -1,6 +1,6 @@
 # 表格展开嵌套表格hover错位问题
 嵌套如下：
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/2779910/1660705193350-daf232e6-a316-4420-bd77-d63754db1922.png#clientId=uab011ddc-a5a4-4&from=paste&height=528&id=u9372cddd&originHeight=528&originWidth=1578&originalType=binary&ratio=1&rotation=0&showTitle=false&size=93889&status=done&style=none&taskId=ue6dcb9bb-6f05-43eb-b358-bd440f0afa4&title=&width=1578)
+![](assets/【element-ui】表格问题/1.png)
 解决方案：
 ```vue
 <el-table

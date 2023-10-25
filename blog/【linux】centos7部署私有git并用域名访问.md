@@ -22,4 +22,4 @@ server
       }
   }
 ```
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628825802616-c47f7ab4-96d9-4838-8460-4d9cf4b49d96.png#clientId=u139be48c-938c-4&from=paste&id=ua2aae761&originHeight=478&originWidth=1024&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u3d0f8d51-8824-4c87-9768-caaa311f921&title=)
+![](assets/【linux】centos7部署私有git并用域名访问/1.png)

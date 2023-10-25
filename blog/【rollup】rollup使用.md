@@ -12,7 +12,7 @@ package.json配置脚本
 ```
 # 配置文件
 项目根目创建`rollup.config.js`
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/2779910/1663726712351-37329b4b-2ad5-495e-aa12-01f5e91ce064.png#averageHue=%239eb37b&clientId=uec735bcd-f458-4&errorMessage=unknown%20error&from=paste&height=597&id=uc489d8d8&originHeight=597&originWidth=913&originalType=binary&ratio=1&rotation=0&showTitle=false&size=71611&status=error&style=none&taskId=u889d3422-aed0-4e3b-81d6-078f768a255&title=&width=913)
+![](assets/【rollup】rollup使用/1.png)
 # 配置项
 ## 常用配置
 详细配置参考官网

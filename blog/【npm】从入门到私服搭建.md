@@ -25,7 +25,7 @@ npm config set registry=[https://registry.npmmirror.com](https://registry.npmmir
 npm init
 npm init用来初始化生成一个新的package.json文件。它会向用户提问一系列问题，如果你觉得不用修改默认配置，一路回车就可以了。
 ## **Package.json文件详解**
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628825996529-d6e253cc-456c-4303-b1e7-377cce87b04f.png#clientId=u7536dc8a-6f82-4&from=paste&id=uce91e89b&originHeight=465&originWidth=553&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=uc19c9854-e9f5-4113-b220-e6bcdf99d37&title=)
+![](assets/【npm】从入门到私服搭建/1.png)
 “name”: “demo1”,  包名
 “version”: “1.0.0”,  包版本号
 “description”: “”,  包描述
@@ -102,20 +102,20 @@ nrm use <RegistryName>
 ## **nrm查看源**
 nrm ls
 此命令会查看当前的npm的所有镜像源名称及地址，带*号的是当前所用的镜像源
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628825997811-d353c881-de4e-4020-a967-0ab86dad26c8.png#clientId=u7536dc8a-6f82-4&from=paste&id=u9bdf3168&originHeight=203&originWidth=554&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=uc411970a-65b0-42aa-bdbe-6acb5b1a3ed&title=)
+![](assets/【npm】从入门到私服搭建/2.png)
 ## **nrm测试当前npm源的响应速度**
 nrm test npm
 此命令会打印出响应的毫秒数
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628825997435-d4f8cd1f-1e14-488b-9063-e17768aa2876.png#clientId=u7536dc8a-6f82-4&from=paste&id=u3c3543f9&originHeight=170&originWidth=503&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=ud110a502-7520-405a-862a-fd859d2e1b6&title=)
+![](assets/【npm】从入门到私服搭建/3.png)
 ## **verdaccio工具介绍**
 [Verdaccio](https://verdaccio.org/)是一个比较简单的配置本地私有npm镜像源的工具。
 ## **verdaccio的安装**
 npm install -g verdaccio
 此命令会全局安装verdaccio
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628825997406-bef2013e-f9b7-4f05-be13-24d8505b1410.png#clientId=u7536dc8a-6f82-4&from=paste&id=u3352efc1&originHeight=184&originWidth=554&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u72617eb1-7516-410c-8b11-85f0ca3b955&title=)
+![](assets/【npm】从入门到私服搭建/4.png)
 ## **verdaccio运行**
 verdaccio
 此命令会运行verdaccio，运行完成后打开浏览器进入本地服务：
 http://localhost:4873/
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628825997972-2cad459f-edce-418e-9ea7-deaad6d7ccef.png#clientId=u7536dc8a-6f82-4&from=paste&id=ue97d090d&originHeight=195&originWidth=553&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=uf3afb4e8-a03b-4cb8-83da-715cc1f48c8&title=)
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628825998693-78045f42-c72b-4b18-bc7e-bd4cab0d1c66.png#clientId=u7536dc8a-6f82-4&from=paste&id=udb468639&originHeight=329&originWidth=554&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u51441506-af5b-48ac-acfc-216f460516c&title=)
+![](assets/【npm】从入门到私服搭建/5.png)
+![](assets/【npm】从入门到私服搭建/6.png)

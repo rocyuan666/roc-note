@@ -158,7 +158,7 @@ onShareAppMessage(option){
 - 将登录态的标识token进行存储，以便下次使用
 - 请求需要登录态标识的接口时，携带token
 
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628824449085-6f737f00-b60e-4456-a294-618be41faa26.png#clientId=uf7ddd5d2-4e3c-4&from=paste&id=ucedbf2b3&originHeight=864&originWidth=856&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u122f61a4-c9a9-465a-aec4-e0f3de686a6&title=)
+![](assets/【微信小程序】系统API相关/1.png)
 ### 界面转跳（路由）
 界面的跳转有两种方式：**通过navigator组件 **和 **通过wx的API跳转**
 **navigators**设置文档：

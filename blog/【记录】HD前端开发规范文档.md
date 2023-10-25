@@ -167,7 +167,7 @@ function handelAdd() {
 - 字体文件夹：font（一般很少用）
 
 比如：
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/2779910/1613975558627-599797be-7417-43d7-b09a-c78b1abb11e5.png#height=177&id=x1sHx&originHeight=177&originWidth=204&originalType=binary&ratio=1&rotation=0&showTitle=false&size=5656&status=done&style=none&title=&width=204)
+![](assets/【记录】HD前端开发规范文档/1.png)
 ## **移动端注意**
 ### **Viewport**
 文档中“页面头部”部分也有提到。

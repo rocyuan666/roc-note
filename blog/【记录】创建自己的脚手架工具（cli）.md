@@ -64,10 +64,10 @@ program.version(require("./package.json").version)
 // 解析指令，这点很重要  不解析指令则无效
 program.parse(process.argv);
 ```
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628840749020-6109fe91-c38e-4c0d-89da-9dbce3a4c635.png#clientId=u6af7ad75-58ff-4&from=paste&id=ud9735f0b&originHeight=386&originWidth=610&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=ubd91b5d1-a11b-4fa5-88a8-c79ce6a3ff6&title=)
+![](assets/【记录】创建自己的脚手架工具（cli）/1.png)
 ### 帮助信息
 默认就有帮助信息可运行yuan -h，帮助信息中的“版本”与“帮助”是自带的，我们也可使用option进行自定义。
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628840748615-9f777225-d9d3-44b3-9803-61e53e933a9c.png#clientId=u6af7ad75-58ff-4&from=paste&id=u9a3eb878&originHeight=641&originWidth=670&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=uc1eda458-078f-4bf4-a878-7bc7a981629&title=)
+![](assets/【记录】创建自己的脚手架工具（cli）/2.png)
 自定义帮助信息：program.option("-F, --framework", "指定创建项目的框架，目前支持vue，react");
 ### 创建指令
 使用command创建命令，option创建选项，action创建执行后的回调
@@ -113,7 +113,7 @@ program
 program.parse(process.argv);
 ```
 运行：
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628840749464-aa1ff709-d568-471e-b03c-bb8532e0f18f.png#clientId=u6af7ad75-58ff-4&from=paste&id=u843fbec1&originHeight=540&originWidth=622&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u050766d8-d0d7-4e3d-b1a1-1f69a5d25fb&title=)
+![](assets/【记录】创建自己的脚手架工具（cli）/3.png)
 指令的问题已经搞定，接下来要做的是不同的命令下载不同的git仓库
 ## download-git-repo使用
 引入后直接使用即可，详细用法参考以上npm官网，东西也比较少
@@ -173,6 +173,6 @@ program.parse(process.argv);
 我只举例了vue项目，其他项目同理。
 ## 完成 · 测试环境运行脚手架
 在命令行执行yuan create vue-demo -vue，就生成了vue-demo的项目，而项目就来自git仓库，后期完善项目模板就直接完善对应的git仓库。
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628840749171-73b72508-2422-4a4b-80b3-6e599d363066.png#clientId=u6af7ad75-58ff-4&from=paste&id=u17a0de25&originHeight=544&originWidth=401&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=ue4433269-5910-4a17-8897-458b074751d&title=)
+![](assets/【记录】创建自己的脚手架工具（cli）/4.png)
 ## 脚手架工具上线至npm
 首先得注册npm账号，在命令行登录你的账号` npm login `指令登录，登录完成后，在当前应用的目录下执行` npm publish `将脚手架工具发布到npm官网。

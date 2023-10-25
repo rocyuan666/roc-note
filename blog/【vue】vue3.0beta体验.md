@@ -6,10 +6,10 @@ vue create projectName
 cd projectName
 然后执行:vue add vue-next
 ```
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628825465787-3908949d-0e56-4f30-9f8f-2c14123b8951.png#clientId=u61c47edb-ad58-4&from=paste&id=u9c46ff6f&originHeight=628&originWidth=1024&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=uc5ceb988-3147-456c-801d-cdf6254e83e&title=)
+![](assets/【vue】vue3.0beta体验/1.png)
 完成后在“package.json”中会发现vue已经是 3.0.0-beta.1版本,目录没什么变化但是“ main.js”中代码发生了变化，看图：
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628825465912-9ac29e42-1c87-42c6-95cd-4005689f4a09.png#clientId=u61c47edb-ad58-4&from=paste&id=u65551490&originHeight=412&originWidth=947&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u786b6e76-4af2-4329-a405-c286368cc16&title=)
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628825465847-41d7cd08-921b-46ee-9159-612da1e7d389.png#clientId=u61c47edb-ad58-4&from=paste&id=u36dee2db&originHeight=410&originWidth=818&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u0e4a8885-d432-4d89-9846-021ef2de02a&title=)
+![](assets/【vue】vue3.0beta体验/2.png)
+![](assets/【vue】vue3.0beta体验/3.png)
 ### 2. 生命周期
 ```css
 setup: 会在组件创建执行(为组件提供属性及方法，都得写在setup中，看下面代码就明白了)

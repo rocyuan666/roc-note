@@ -1,4 +1,4 @@
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/2779910/1667878944868-57bb3311-1c52-4708-b6c7-5644ad769b36.png#averageHue=%23fbfbfb&clientId=u57c90163-3102-4&from=paste&height=481&id=u42ba164d&originHeight=481&originWidth=1849&originalType=binary&ratio=1&rotation=0&showTitle=false&size=33712&status=done&style=none&taskId=u07f4e76a-db04-4dbf-ac5a-f760ee66942&title=&width=1849)
+![](assets/【js】浏览器兼容提示急速模式/1.png)
 ```javascript
 (function (window) {
   var userAgent = navigator.userAgent;

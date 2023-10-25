@@ -12,7 +12,7 @@ ejs|hbs|hjs|jade|pug|twig|vash
 3. 设置试图引擎为html：app.set('view engine', 'html');
 
 **修改前：**
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628841247659-853bc88c-677e-4351-b829-1489e3d08339.png#clientId=ufc09b3fd-cb13-4&from=paste&id=u452f3380&originHeight=382&originWidth=492&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u3e843bb7-924b-43f0-8d56-db923c7c702&title=)
+![](assets/【nodejs】express-html视图引擎/1.png)
 **修改后：**
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628841247862-951237d1-dea7-4bb6-80d7-b8dcbafc2fa7.png#clientId=ufc09b3fd-cb13-4&from=paste&id=u30f1c8f4&originHeight=386&originWidth=502&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u6f0ed443-c7df-48df-9087-41cb9ab5ec3&title=)
+![](assets/【nodejs】express-html视图引擎/2.png)
 然后在根目录的views目录（不一定是views，看自己的设置）创建对应的html文件即可。

@@ -3,7 +3,7 @@ roc-cli是一款创建多种项目脚手架，平时开发项目用vue或react�
 ## npm官方仓库
 仓库地址：
 [https://www.npmjs.com/package/roc-cli](https://www.npmjs.com/package/roc-cli)
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628841098366-17125d32-6bae-4ec7-ae2c-83d86129bba5.png#clientId=ufb052124-9848-4&from=paste&id=ube8dbfec&originHeight=462&originWidth=1024&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u491967d7-4441-4874-845d-8453cce9ee2&title=)
+![](assets/【记录】roc-cli—创建多种项目的脚手架/1.png)
 ## roc-cli安装
 全局安装： ` npm i -g roc-cli `
 ## 使用说明

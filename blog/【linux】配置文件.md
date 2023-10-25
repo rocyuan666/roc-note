@@ -51,7 +51,7 @@ export PATH=${MAVEN_HOME}/bin:$PATH
 
 
 ```
-![1649423329.jpg](https://cdn.nlark.com/yuque/0/2022/jpeg/2779910/1649423333764-76ad5420-edfb-4331-b24c-6f77030715e9.jpeg#clientId=ubac852ef-576d-4&from=paste&height=1018&id=uc9048d50&originHeight=1018&originWidth=893&originalType=binary&ratio=1&rotation=0&showTitle=false&size=710050&status=done&style=none&taskId=u19015024-30e9-4b55-8e65-d4abf41030a&title=&width=893)
+![](assets/【linux】配置文件/1.jpg)
 ## .bashrc文件配置
 位置：/home/(username)/.bashrc
 解决每次需要source /etc/profile配置才生效

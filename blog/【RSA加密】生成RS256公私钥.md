@@ -10,4 +10,4 @@ openssl genrsa -out private.key 1024
 openssl rsa -in private.key -pubout -out public.key
 ```
 会在终端当前目录下生成公私钥。
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/2779910/1667959140159-daa7cdb8-0572-49f4-a5c7-e2c9a98fe836.png#averageHue=%231e1b19&clientId=u10638df5-a45b-4&from=paste&height=297&id=u3c74f733&originHeight=297&originWidth=564&originalType=binary&ratio=1&rotation=0&showTitle=false&size=24001&status=done&style=none&taskId=uff762093-b42a-4e6f-80fe-d111597bf56&title=&width=564)
+![](assets/【RSA加密】生成RS256公私钥/1.png)

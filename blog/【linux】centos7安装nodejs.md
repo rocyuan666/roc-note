@@ -12,7 +12,7 @@ tar xzvf node-v16.14.0-linux-x64.tar.xz
 ln -s /home/rocyuan/software/node-v16.14.0-linux-x64/bin/npm /usr/local/bin/
 ln -s /home/rocyuan/software/node-v16.14.0-linux-x64/bin/node /usr/local/bin/
 ```
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/2779910/1646728320836-80a51b16-091a-47ae-a6b8-41f61a58953a.png#clientId=u302c610d-89a7-4&from=paste&height=180&id=ue2b0f0b1&originHeight=180&originWidth=842&originalType=binary&ratio=1&rotation=0&showTitle=false&size=6337&status=done&style=none&taskId=u15801f82-1b50-4ede-9eaa-1e7dabf19f5&title=&width=842)
+![](assets/【linux】centos7安装nodejs/1.png)
 # 配置环境变量
 修改配置文件（配置PATH环境变量）
 ```

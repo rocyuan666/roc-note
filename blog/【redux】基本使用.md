@@ -9,11 +9,11 @@ redux主要有三大核心：store、action、reducer
 **使用纯函数来执行修改**
 通过reducer（reducer必须为一个纯函数，纯函数概念这里不介绍）将旧state和actions联系在一起，并且返回一个新的State。
 ## redux流程图
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628840150012-2b1e17d0-60b7-4b37-ac8b-840c71f67bd2.png#clientId=udc66e713-eb04-4&from=paste&id=uee2d2c13&originHeight=479&originWidth=650&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u2cdb3b4c-1695-4c5a-a1ef-e0d6f78d0dd&title=)
+![](assets/【redux】基本使用/1.png)
 ## redux的使用
 先不结合react，单独使用redux
 yarn管理示例项目，为了让node支持es6模块化，package.json中添加以下代码，scripts定义start，使我们能够yarn start运行示例项目；并且创建入口文件。
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628840150372-79252447-8e20-469e-a72d-2fedb5b5ae5b.png#clientId=udc66e713-eb04-4&from=paste&id=ua2fb93bf&originHeight=330&originWidth=812&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u2e78a682-53a3-4932-9332-cd7953dacd9&title=)
+![](assets/【redux】基本使用/2.png)
 首先我们yarn add redux
 创建redux的三大核心放在store文件夹中
 index.js => store
@@ -78,8 +78,8 @@ store.subscribe(_ => {
 store.dispatch(changeNum(1))
 ```
 执行yarn start也就是定义的脚本 node index.js，打印出来我们dispatch派发action后改变的store中的state对象
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628840150021-5ecd7afe-b8a6-4675-b552-0136556bdb9e.png#clientId=udc66e713-eb04-4&from=paste&id=u6460afd0&originHeight=608&originWidth=598&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=ueb8fbf34-5494-40ff-bbfd-d8f76eafc04&title=)
+![](assets/【redux】基本使用/3.png)
 我们多次派发action，每次将num+1（+2的时候只需要往action的函数中传入2就可以，这就是action定义为函数的好处及灵活性），打印num试试：
-![](https://cdn.nlark.com/yuque/0/2021/png/2779910/1628840150651-5068429a-c5bc-4001-b7cf-e2d3c56cda85.png#clientId=udc66e713-eb04-4&from=paste&id=ua568c150&originHeight=672&originWidth=578&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=ud5a6277d-3a89-4783-9fd2-4354b522bcc&title=)
+![](assets/【redux】基本使用/4.png)
 以上就是单独使用redux的基本操作
 可以看出来，我们如果把根目录下的index.js看做react组件的话，它与react结合使用时，就需要我们手动的派发action，手动的监听改变，手动的关闭监听等操作，于是我们可以使用react-redux库。
