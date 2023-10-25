@@ -1,0 +1,6 @@
+npm ---------- [https://registry.npmjs.org/](https://registry.npmjs.org/)
+ yarn --------- [https://registry.yarnpkg.com/](https://registry.yarnpkg.com/)
+ tencent ------ [https://mirrors.cloud.tencent.com/npm/](https://mirrors.cloud.tencent.com/npm/)
+ cnpm --------- [https://r.cnpmjs.org/](https://r.cnpmjs.org/)
+ taobao ------- [https://registry.npmmirror.com/](https://registry.npmmirror.com/)
+ npmMirror ---- [https://skimdb.npmjs.com/registry/](https://skimdb.npmjs.com/registry/)

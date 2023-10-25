@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "2a89f1d7a43da8ff",
+    "type": "split",
+    "children": [
+      {
+        "id": "32b66df6fbca6e13",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0a0b350bb0570b9c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "【记录】官方文档链接.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5be4b213a3a35c2a",
+    "type": "split",
+    "children": [
+      {
+        "id": "a4215798f065dc17",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3e6b0c84acbfacc4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "df2787e9f789a731",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "43f1a5174329d86b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f9b25a9d361499b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "c8b9c76ec79b461f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0e651f5537291fc9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "【记录】官方文档链接.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "267eb21e38bbf698",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "【记录】官方文档链接.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a17e2523c07208a5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0a416433360baab8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "【记录】官方文档链接.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "0a0b350bb0570b9c",
+  "lastOpenFiles": [
+    "【记录】使用.htaccess将http重定向https.md",
+    "【css】4月4网站全灰，只要一行代码.md",
+    "【记录】roc-cli—创建多种项目的脚手架.md",
+    "【记录】HarmonyOS-js开发应用体验.md",
+    "【安卓】app签名证书（keystore）生成.md",
+    "未命名",
+    "assets",
+    "【vue】大屏适应方案.md",
+    "【vue】vue3.0beta体验.md",
+    "【vue】插值操作.md",
+    "assets/20210717183958532.png.md",
+    "[roc-cli.md",
+    "【vue】创建UI库并上传npm私有仓库.md",
+    "【vue】双向数据绑定（v-model）.md",
+    "【vue】中filters里不能使用this解决.md",
+    "【vue】组件化.md",
+    "【vue】组件通讯.md",
+    "【vue】element-ui按钮点击后获焦颜色问题.md",
+    "【vue】vue3或2中methods不能是箭头函数、this指向研究.md",
+    "【vue】循环遍历（v-for）.md",
+    "【vue】vuedraggable中文文档.md",
+    "【vue】事件监听.md",
+    "【vue】计算属性.md",
+    "【vue】动态绑定属性（v-bind）.md",
+    "【vue】插槽.md",
+    "【vue-router】整理.md",
+    "【vue-cli】生产环境去掉console.md",
+    "【vscode】设置默认bash.md",
+    "assets"
+  ]
+}
