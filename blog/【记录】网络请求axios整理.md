@@ -1,16 +1,24 @@
 axios个人常用整理
+
 github地址：
+
 [axios/axios: Promise based HTTP client for the browser and node.js (github.com)](https://github.com/axios/axios)
+
 ## axios安装导入
-```javascript
-安装
+
+```bash
+# 安装
 npm install axios --save
-导入
+# 导入
 import axios from 'axios'
 ```
+
 ## 全局方式（项目中不会这么使用，后面会自行封装）
+
 axios本身返回promise。
+
 ### 1.基本使用
+
 ```javascript
 axios({
   url: 'http://127.0.0.1:8000/xxx',
@@ -24,7 +32,9 @@ axios({
   console.log(err)
 })
 ```
+
 ### 2.并发请求
+
 ```javascript
 axios.all([
   //请求1
@@ -45,14 +55,19 @@ axios.all([
   console.log(res[1])
 })
 ```
+
 ### 3.全局的配置
+
 ```javascript
 比如：
 axios.defaults.baseURL = 'http://127.0.0.1:8000'
 axios.defaults.timeOut = 5000
 ```
+
 但是项目中有时不可能只有一个baseURL或者其他配置不相同，这时候我们就需要实例化axios
+
 ## 实例化方式（项目中也不会这么使用，后面会自行封装）
+
 ```javascript
 //实例化axios
 const sl1 = axios.create({
@@ -67,7 +82,9 @@ sl1({
   console.log(res)
 })
 ```
+
 ## 拦截器
+
 ```javascript
 请求拦截：
 axios.interceptors.requset.use(
@@ -95,9 +112,13 @@ axios.interceptors.response.use(
   }
 )
 ```
+
 ## axios封装（常用）
+
 每个人封装不同，一下为本人常用封装
+
 封装request.js
+
 ```javascript
 import axios from "axios"
 

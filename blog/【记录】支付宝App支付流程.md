@@ -1,9 +1,12 @@
 ![image.png](http://mdn.alipayobjects.com/afts/img/A*douiQrzajBAAAAAAAAAAAAAAAa8wAA/original?bz=openpt_doc&t=KjWkff1yaFn8DA2_6o8D9AAAAABkMK8AAAAA#height=464&id=yRSuU&originHeight=464&originWidth=653&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=&width=653)
+
 参考：[https://opendocs.alipay.com/open/204/105297](https://opendocs.alipay.com/open/204/105297)
 
 前端点击提交订单发起请求，请求订单信息（后端生成订单信息）；
+
 ![](assets/【记录】支付宝App支付流程/2.png)
-```javascript
+
+```json
 // 创建的订单信息返回参考（示例）
 // 为了安全，一般转跳支付页面会使用订单id查询订单数据（客户端不缓存订单数据）
 {
@@ -58,7 +61,9 @@
 	}
 }
 ```
+
 跳转支付方式页面，使用订单的order_sn和支付类型（比如支付宝），请求 支付宝订单数据（后端生成支付宝订单数据），然后前端拿支付宝订单数据使用uniapp提供的api（uni.requestPayment）调用支付宝支付；支付完成后返回结果（支付成功与失败）；
+
 ![](assets/【记录】支付宝App支付流程/3.png)
 
 ```javascript

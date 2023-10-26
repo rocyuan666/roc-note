@@ -1,8 +1,12 @@
 ## 安装jre环境
+
 推荐jre8环境，环境变量记得配置（已安装的跳过）
+
 ## 生成签名证书
+
 使用keytool -genkey命令生成证书：
-```javascript
+
+```bash
 keytool -genkey -alias testalias -keyalg RSA -keysize 2048 -validity 36500 -keystore test.keystore
 ```
 
@@ -10,7 +14,8 @@ keytool -genkey -alias testalias -keyalg RSA -keysize 2048 -validity 36500 -keys
 - test.keystore是证书文件名称，可修改为自己想设置的文件名称，也可以指定完整文件路径
 
 回车后会提示：
-```javascript
+
+```bash
 Microsoft Windows [版本 10.0.18363.1379]
 (c) 2019 Microsoft Corporation。保留所有权利。
 
@@ -35,14 +40,20 @@ CN=rocyuan, OU=hendon, O=hd, L=shaanxi, ST=xian, C=CN是否正确?
 输入 <rocalias> 的密钥口令
         (如果和密钥库口令相同, 按回车):
 ```
-以上命令运行完成后就会生成证书，路径为“E:\roc”
+
+以上命令运行完成后就会生成证书，路径为“`E:\roc`”
+
 ![](assets/【安卓】app签名证书（keystore）生成/1.png)
+
 ## 查看证书信息
-可以使用keytool -list -v -keystore roc.keystore命令查看证书信息
+
+可以使用 `keytool -list -v -keystore roc.keystore` 命令查看证书信息
+
 
 - roc.keystore是证书名
-```javascript
-内容有删减，仅供参考
+
+```bash
+# 内容有删减，仅供参考
 
 E:\roc>keytool -list -v -keystore roc.keystore
 输入密钥库口令:
@@ -83,8 +94,13 @@ KeyIdentifier [
 *******************************************
 *******************************************
 ```
+
 ## 安卓签名获取工具
+
 安装配置证书的应用，然后安装使用签名获取工具获取该应用的签名。
+
 工具下载地址参考：
+
 [https://developers.weixin.qq.com/doc/oplatform/Downloads/Android_Resource.html](https://developers.weixin.qq.com/doc/oplatform/Downloads/Android_Resource.html)
+
 ![](assets/【安卓】app签名证书（keystore）生成/2.png)
