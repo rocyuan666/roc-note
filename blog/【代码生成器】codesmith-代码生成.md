@@ -1,7 +1,7 @@
 # 下载
 
-百度网盘下载：
-链接：[https://pan.baidu.com/s/1l3OWoOEcLkjxGLPBpbJWOg?pwd=8zgv ](https://pan.baidu.com/s/1l3OWoOEcLkjxGLPBpbJWOg?pwd=8zgv )
+百度网盘下载：  
+链接：[https://pan.baidu.com/s/1l3OWoOEcLkjxGLPBpbJWOg?pwd=8zgv ](https://pan.baidu.com/s/1l3OWoOEcLkjxGLPBpbJWOg?pwd=8zgv )  
 提取码：`8zgv`
 
 # 配置
@@ -21,8 +21,8 @@ https://downloads.mysql.com/archives/c-net/
 </system.data>
 ```
 
-4. 确认下载的 `MySql.Data.dll` 版本号和上述字符串中的`Version`（版本）一致, 保存关闭文件, 重启 `CodeSmith`
-** 第 3 步 中配置版本号与压缩包内 `MySql.Data.dll` 文件版本一致，可直接使用！ **
+4. 确认下载的 `MySql.Data.dll` 版本号和上述字符串中的`Version`（版本）一致, 保存关闭文件, 重启 `CodeSmith`  
+**第 3 步 中配置版本号与压缩包内 `MySql.Data.dll` 文件版本一致，可直接使用！**
 
 5. 在 `Schama Explorer` 面板中新增数据库，`provider Type` 选择 `MySQLSchamaProvider`, 连接字符串如下:
 
@@ -38,5 +38,5 @@ server=172.0.0.1;User ID=root;Password=root;database=DB_NAME;
 
 # 示例代码
 
-示例模板代码：
+示例模板代码：  
 [https://github.com/rocyuan666/codesmith_template](https://github.com/rocyuan666/codesmith_template)
