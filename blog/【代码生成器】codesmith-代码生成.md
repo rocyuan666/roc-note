@@ -6,10 +6,10 @@
 
 # 配置
 
-1. 下载 `MySql.Data.dll` 文件（压缩包内有）
-下载地址: 
-https://www.dll-files.com/mysql.data.dll.html
-https://downloads.mysql.com/archives/c-net/
+1. 下载 `MySql.Data.dll` 文件（压缩包内有）  
+下载地址:   
+https://www.dll-files.com/mysql.data.dll.html  
+https://downloads.mysql.com/archives/c-net/  
 2. 将 `MySql.Data.dll` 复制到 `CodeSmith` 的 `bin` 文件夹下
 3. 修改 `CodeSmith` 安装目录下的 `TemplateEditor.exe.config`， 在最后结尾的 `</configuration>` 之前加入以下行：
 
