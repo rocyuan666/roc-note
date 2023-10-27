@@ -1,4 +1,5 @@
 注意不是Storage缓存是app资源文件缓存
+
 ```vue
 <template>
 	<view>

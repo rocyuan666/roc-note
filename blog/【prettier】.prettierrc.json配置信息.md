@@ -1,4 +1,5 @@
 .prettierrc.json配置详解
+
 ```javascript
 const prettierrc = {
   $schema: "http://json-schema.org/draft-04/schema#",

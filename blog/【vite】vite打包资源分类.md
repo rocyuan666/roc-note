@@ -3,6 +3,7 @@
 [Configuration Options | Rollup (rollupjs.org)](https://rollupjs.org/configuration-options/#output-chunkfilenames)
 [Configuration Options | Rollup (rollupjs.org)](https://rollupjs.org/configuration-options/#output-entryfilenames)
 [Configuration Options | Rollup (rollupjs.org)](https://rollupjs.org/configuration-options/#output-assetfilenames)
+
 ```javascript
 build: {
   rollupOptions: {

@@ -1,9 +1,10 @@
 以下为本人工作，甲方baba测试出的兼容问题，在此记录
-## 横竖屏提示兼容问题 
 
+## 横竖屏提示兼容问题 
 
 vivoX20 横竖屏提示 输入法键盘按出来，导致屏幕可视区域（landscape，portrait两者都是按照屏幕可视区域宽高进行判断的）高度变小 BUG ；
 aspect-ratio 是按照设备中的页面可见区域宽度与高度的比率，小于13/9比率为横屏，大于13/9比率就为竖屏 。
+
 ```css
 @media all and (orientation : landscape) { //横屏}
 @media all and (orientation : portrait){ //竖屏 }
@@ -21,9 +22,12 @@ html::after{content:"\4E3A\4E86\66F4\597D\7684\4F53\9A8C\FF0C\8BF7\5C06\624B\673
 body::before{content:"";position:absolute;zindex:99999;height:200px;width:100px;left:50%;top:50%;margin:-140px 0 0 -50px;color:#fff;backgroundimage:url("//game.gtimg.cn/images/xiawa/cp/a20191107wish/phone.png");background-repeat:no-repeat;background-position:center center;background-size:100px auto;-webkit-transform:rotateZ(-90deg);transform:rotateZ(-90deg);}
 }
 ```
+
 ## select选择框文字不居中
+
 iphoneX 中 select选择框文字不兼容居中
 利用span模拟选择框
+
 ```css
 示例：
 .serbox .sel-text{
@@ -55,7 +59,9 @@ function selJR(id1,id2){
 }
 selJR("sel-text0","sel0");
 ```
+
 ## iphone设备下输入框默认有内阴影
+
 ```css
 el
 {

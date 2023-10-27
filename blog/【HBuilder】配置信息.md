@@ -12,6 +12,7 @@
 }
 
 ```
+
 ```javascript
 module.exports = {
   printWidth: 100,
@@ -35,6 +36,7 @@ module.exports = {
 }
 
 ```
+
 ```javascript
 module.exports = {
 	parsers: {
@@ -92,6 +94,7 @@ module.exports = {
 	}
 }
 ```
+
 ```javascript
 //配置项说明文档：https://thisismanta.github.io/stylus-supremacy/#options
 module.exports = {

@@ -1,4 +1,5 @@
 ![](assets/【js】浏览器兼容提示急速模式/1.png)
+
 ```javascript
 (function (window) {
   var userAgent = navigator.userAgent;

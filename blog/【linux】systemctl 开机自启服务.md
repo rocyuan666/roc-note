@@ -1,4 +1,5 @@
 `cloudreve.service` 示例
+
 ```bash
 vim /usr/lib/systemd/system/cloudreve.service
 ```
@@ -23,8 +24,11 @@ StandardError=syslog
 [Install]
 WantedBy=multi-user.target
 ```
+
 # 新建service
+
 /usr/lib/systemd/system/xxx.service
+
 ```bash
 [Unit]
 # 服务名
@@ -46,11 +50,15 @@ RestartSec=5s
 [Install]
 WantedBy=multi-user.target
 ```
+
 新建完成后刷新配置
+
 ```bash
 systemctl daemon-reload
 ```
+
 # systemctl运行命令
+
 ```bash
 systemctl daemon-reload # 刷新配置
 

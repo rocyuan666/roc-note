@@ -1,8 +1,14 @@
 准确的说他是通过Object.prototype.toString.call(xxx)来检测对象类型的。
+
 ## 如何进行检测
-先看下MDN上的概念，当然MDN下面也有说到使用它来检测对象类型。mdn地址：[https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/toString](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/toString)
+
+先看下MDN上的概念，当然MDN下面也有说到使用它来检测对象类型。mdn地址：
+[https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/toString](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/toString)
+
 ![](assets/【js】使用toString方法精确检测对象类型详解/1.png)
+
 也就是说它返回的是字符串，如下：
+
 ```javascript
 const roc = []
 console.log(Object.prototype.toString.call(roc))
@@ -18,13 +24,17 @@ console.log(Object.prototype.toString.call(roc))
 ......
 */
 ```
+
 通过上面的打印判断字符串的方式就可以检测对象类型。
 而且很多人都是这么做的，包括一些工具库里，在里面它会用Object.prototype.toString.call(xxx)的返回值与上面的字符串做对比判断，从而返回true或false。
 注意：只能用Object.prototype.toString，因为Array、Number……中的toString都是经过处理后绑定到他们的原型上的。所以不同实例化不同类型的对象会通过原型拿到不同的toString。
+
 ## 验证它们的toString是不同的方法
+
 要搞清楚这个问题，必须要了解**原型**、**原型链**、**this指向**与**call方法的使用**
 因为Object的原型对象是原型链的最顶端，通过它的原型对象再去拿对象原型会是null。Array、Number……的toString方法是处理过的toString方法，与Object上的不一样。
 看下面的代码（用数组举例，其他的同理）：
+
 ```javascript
 const arr = [1, 2]
 console.log(arr.toString()) // 打印 1,2   不能判断对象类型
@@ -42,9 +52,13 @@ Array.prototype.toString.call(arr),打印与arr.toString()一样
 */
 console.log(Array.prototype) // 打印如下图
 ```
+
 代码第二行中是用的这个toString方法
+
 ![](assets/【js】使用toString方法精确检测对象类型详解/2.png)
+
 那如果我们从 arr数组对象 根据原型链的思路找下去找到Object，使用它原型里的toString试试看
+
 ```javascript
 const arr = [1, 2]
 // 等价于这样写：const arr = new Array(1, 2)
@@ -58,9 +72,13 @@ console.log(arr.__proto__.constructor.prototype.__proto__.constructor)
 3.Array.prototype.__proto__.constructor: 它就是顺着原型链找过来的Object
 */
 ```
+
 如图打印通过原型链找到的 Object构造方法
+
 ![](assets/【js】使用toString方法精确检测对象类型详解/3.png)
+
 上面我们已经从 arr对象 通过原型链一路追杀到了Object，那么我们就可以使用开头提到的Object.proptotype.toString了，还是看代码
+
 ```javascript
 /*
 arr.__proto__.constructor.prototype.__proto__.constructor 等于 Object
@@ -69,9 +87,13 @@ arr.__proto__.constructor.prototype.__proto__.constructor 等于 Object
 console.log(arr.__proto__.constructor.prototype.__proto__.constructor.prototype.toString.call(arr))
 console.log(Object.prototype.toString.call(arr))
 ```
+
 ![](assets/【js】使用toString方法精确检测对象类型详解/4.png)
+
 ## 验证删除Array原型上的toString方法后直接使用
+
 在原型链的理论上我们把Array原型上的toString方法删除后就可以检测对象类型（因为这时候使用的就是Object原型上的toString）上代码：
+
 ```javascript
 const arr = [1, 2]
 // 删除前
@@ -80,4 +102,5 @@ delete Array.prototype.toString
 // 删除后
 console.log(arr.toString())
 ```
+
 ![](assets/【js】使用toString方法精确检测对象类型详解/5.png)

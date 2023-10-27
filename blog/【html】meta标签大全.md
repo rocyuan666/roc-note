@@ -1,5 +1,7 @@
 个人工作常用（TX互娱cp）：
+
 ## PC：
+
 ```html
 <meta charset="gbk" /> 
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -9,7 +11,9 @@
 <meta name="Description" content="页面的描述内容" />
 <meta name="Keywords" content="页面关键字" />
 ```
+
 ## M：
+
 ```html
 <meta charset="gbk" /> 
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
@@ -24,7 +28,9 @@
 <meta name="Description" content="页面的描述内容" />
 <meta name="Keywords" content="页面关键字" />
 ```
+
 ## meta标签大全详解：
+
 ```html
 <meta charset="UTF-8">
 //声明字符的编码**防止出现乱码

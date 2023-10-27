@@ -1,9 +1,12 @@
 组件通讯就是组件与组件之间的数据传递大致可分为：
 父组件传子组件、子组件传父组件、非父子组件传递（兄弟组件传递等）
 而react中父子组件的通讯核心是props，非父子组件通讯核心是context（暂时不谈redux）
+
 ## 父传子—props
+
 其实这个props用法非常简单
 将需要传给子组件的数据卸载组件标签的属性及属性值上，子组件的props对象中就会有传过来的值，那么这是什么原理呢？下面详解
+
 ```jsx
 // 子组件
 function Home(props) {
@@ -28,9 +31,12 @@ class APP extends React.Component {
   }
 }
 ```
+
 ## 子传父—props
+
 一般子组件传数据给父组件，都是子组件触发某种事件然后将数据传出，vue中是应用了$emit，而react非常灵活，根本不需要那样
 父组件传递给子组件一个回调函数，子组件调用回调函数时把数据传入回调函数的参数中就可以传递过来了。
+
 ```jsx
 // 子组件
 class Home extends React.Component {
@@ -66,11 +72,15 @@ class APP extends React.Component {
   }
 }
 ```
+
 ## 非父子组件—context（用法1）
+
 非父子组件传值，vue中使用bus事件总线方式可以传递，理论上react这种方式也是可行的，但是react提供了context，它的用法简单分为：
+
 1. 创建context
 2. 发送数据（MyContext.Provider value={this.state.num}）
-3.接收数据（函数组件接收与class组件接收方法不同，详情见下）
+3. 接收数据（函数组件接收与class组件接收方法不同，详情见下）
+
 ```jsx
 /**
  * 跨组件传值（context）：
@@ -151,10 +161,14 @@ ReactDOM.render(
   document.getElementById("root")
 )
 ```
+
 ## 非父子组件—context（用法2）
+
 将createContext返回的对象解构出来，有两个组件Provider、Consumer
 Provider用来传值、Consumer用来接收
+
 **父组件：**
+
 ```jsx
 export const {Provider, Consumer} = createContext("hello")
 
@@ -163,7 +177,9 @@ export const {Provider, Consumer} = createContext("hello")
   <Header></Header>
 </Provider>
 ```
+
 **跨组件（假如是孙组件）：**
+
 ```jsx
 import {Consumer} from "../../../index"
 

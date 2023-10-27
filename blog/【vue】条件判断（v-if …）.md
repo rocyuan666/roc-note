@@ -1,4 +1,5 @@
 ## v-if使用：
+
 ```vue
 <h2 v-if="isShow">
 	<p>{{message}}</p>
@@ -9,7 +10,9 @@ data: {
 	isShow: false
 }
 ```
+
 ## v-if和v-else的使用：
+
 ```vue
 <h2 v-if="isShow">
 	<p>{{message}}</p>
@@ -21,7 +24,9 @@ data: {
 	isShow: true
 }
 ```
+
 ## v-if和v-else-if和v-else的使用：
+
 ```vue
 <h2 v-if="score >= 90">优秀</h2>
 <h2 v-else-if="score >= 80">良好</h2>
@@ -32,7 +37,9 @@ data: {
 	score: 90
 }
 ```
+
 ## v-show的使用（v-if，v-show区别）：
+
 ```vue
 <!-- 
 v-if: 条件为 false 时；包含v-if的Dom不会存在在页面中（适用于切换频率低）

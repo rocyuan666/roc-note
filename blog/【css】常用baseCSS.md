@@ -1,4 +1,5 @@
 ## PC端：
+
 ```css
 body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form,header,section,article,footer{margin:0;}
 body,button,input,select,textarea{font:12px/1.5 tahoma,'\5FAE\8F6F\96C5\9ED1',sans-serif}
@@ -12,7 +13,9 @@ button,input,select,textarea{font-size:100%;outline:none}
 table{border-collapse:collapse;border-spacing:0}
 td,th,ul,ol{padding:0}
 ```
+
 ## 移动端：
+
 ```css
 /* 移动端常用reset.css (文字版本) */
 /* reset */
@@ -39,7 +42,9 @@ html, body {
     user-select: none;
 }
 ```
+
 ## PC常用（TX互娱cp）：
+
 ```css
 /* reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
@@ -70,7 +75,9 @@ a:hover {text-decoration:none;}
 .min-title h2{position: absolute;left: 95px;top:-4px;font-size:38px;font-weight: bold;color:#ff4c36;}
 .main img{display: block;}
 ```
+
 ## 畅游cp：
+
 ```css
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

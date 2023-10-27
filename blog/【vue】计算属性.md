@@ -1,4 +1,5 @@
 ## 基本使用：
+
 ```vue
 <h2>{{firstName + " " + lastName}}</h2>
 <!-- 计算属性 -->
@@ -11,7 +12,9 @@ computed: {
 	}
 }
 ```
+
 ## 进阶使用：
+
 ```vue
 <h2>总价格：{{prices}}</h2>
 
@@ -35,7 +38,9 @@ computed: {
 	}
 }
 ```
+
 ## 计算属性的setter和getter：
+
 ```vue
 <h2>{{fullName}}</h2>
 
@@ -56,5 +61,7 @@ computed: {
 	}
 }
 ```
+
 ## computed和methods区别
+
 多次执行时， computed 只执行1次methods会执行多次。

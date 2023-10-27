@@ -1,15 +1,23 @@
 站点服务单独的配置文件；一般不会把所有站点服务全部配置到nginx.conf下，会将每个站点服务配置一个单独的配置文件（*.conf）。
+
 nginx.conf是整个nginx全局下的配置，在全局配置下引入单独站点的配置文件，如:
+
 ```
 # 指定 单独站点配置文件（域名.conf） 如luojing.top站点 luojing.top.conf
 # 这个目录是宝塔默认的目录
 include /www/server/panel/vhost/nginx/*.conf;
 ```
+
 配置时候注意层级
+
 ![](assets/【nginx】站点单独配置/1.png)
+
 权限全是600（rw-------）
+
 ![](assets/【nginx】站点单独配置/2.png)
-*.conf文件示例
+
+**.conf文件示例**
+
 ```
 server
 {

@@ -1,4 +1,5 @@
 ## v-for遍历数组：
+
 ```vue
 <ul>
 	<li v-for="(item, index) in names">{{index+1}}. {{item}}</li>
@@ -8,7 +9,9 @@ data: {
 	names: ['roc','koke','sev']
 }
 ```
+
 ## v-for遍历对象：
+
 ```vue
 <ul>
 	<li v-for="(value, key, index) in info">{{index}} - {{key}} : {{value}}</li>
@@ -22,7 +25,9 @@ data: {
 	}
 }
 ```
+
 ## v-for使用过程需添加key：
+
 ```vue
 // 官网：建议尽可能在使用 v-for 时提供 key attribute，除非遍历输出的 DOM 内容非常简单，或者是刻意依赖默认行为以获取性能上的提升。
 // vue会复用渲染的组件（dom）从而不会重新渲染，加key保证唯一性，不会复用将重新渲染。
@@ -34,7 +39,9 @@ data: {
 	letters: ['a', 'b', 'c', 'd', 'e']
 }
 ```
+
 ## 数组响应式的方法：
+
 ```vue
 // 通过索引修改数组中的元素，不会发生响应式
 this.letters[0] = 'aaa';

@@ -1,4 +1,5 @@
 ## 图片懒加载
+
 ```css
 npm install vue-lazyload --save
 
@@ -11,7 +12,9 @@ import VueLazyLoad from 'vue-lazyload'
  })
 //使用懒加载：img :src='' 更改为 img v-lazy=''
 ```
+
 ## 顶部进度条
+
 ```css
 npm install nprogress --save
 import NProgress from 'nprogress'
@@ -21,7 +24,9 @@ import 'nprogress/nprogress.css'
 NProgress.start() 显示进度条
 NProgress.done() 隐藏进度条
 ```
+
 ## px单位转换
+
 ```css
 npm install postcss-px-to-viewport --save-dev
 

@@ -1,4 +1,5 @@
 # 隐私政策
+
 欢迎您使用本软件（以下简称“本软件”），本软件是由xxx科技有限公司（以下简称“本公司”）向用户提供的**xxx应用**。
 本公司将会采取合法、合理的措施保护用户的个人信息，非经法定原因或用户事先许可，本公司不会向任何第三方透露您的密码、姓名、手机号码等非公开信息。
 我们的产品基于**DCloud uni-app(5+ App/Wap2App)**开发，应用运行期间需要收集您的设备唯一识别码（IMEI/android ID/DEVICE_ID/IDFA、SIM 卡 IMSI 信息）以提供统计分析服务，并通过应用启动数据及异常错误日志分析改进性能和用户体验，为用户提供更好的服务。详情内容请访问《DCloud用户服务条款》。 （DCloud用户服务条款超链至：[https://ask.dcloud.net.cn/protocol.html](https://ask.dcloud.net.cn/protocol.html)）

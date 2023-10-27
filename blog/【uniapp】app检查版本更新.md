@@ -1,6 +1,8 @@
 uniapp开发app检查版本更新，可在每次打开app检查更新（也就是App的onLaunch生命周期里）进行检查更新。
 若有更新：模态框提示用户“是否选择更新”；选择是则选择浏览器，打开更新下载app的url，进行下载更新。
+
 示例代码：
+
 ```javascript
 onLaunch: function() {
   console.log('App Launch')

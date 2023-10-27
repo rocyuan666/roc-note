@@ -1,5 +1,6 @@
 执行nrm报错 internal/validators.js:124 throw new ERR_INVALID_ARG_TYPE(name, ‘string’, value);
-```javascript
+
+```bash
 C:\Users\Administrator>nrm ls
 internal/validators.js:124
     throw new ERR_INVALID_ARG_TYPE(name, 'string', value);
@@ -18,11 +19,15 @@ internal/validators.js:124
   code: 'ERR_INVALID_ARG_TYPE'
 }
 ```
+
 找到安装nrm的文件夹，一般在（AppData为隐藏文件夹）：
-```javascript
+
+```
 C:\Users\Administrator\AppData\Roaming\npm\node_modules\nrm
 ```
+
 找到cli.js17行，改成：
+
 ```javascript
 //const NRMRC = path.join(process.env.HOME, '.nrmrc'); (删除)
 const NRMRC = path.join(process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'], '.nrmrc');

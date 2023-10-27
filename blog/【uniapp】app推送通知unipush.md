@@ -1,4 +1,5 @@
 打包需要开通push模块权限
+
 ```javascript
 onLaunch: function() {
   // #ifdef APP-PLUS  

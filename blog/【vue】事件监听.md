@@ -1,4 +1,5 @@
 ## 基本使用：
+
 ```vue
 <h2>{{num}}</h2>
 <!-- 不需要传参的时候可以省略 方法的括号() -->
@@ -18,7 +19,9 @@ methods: {
 	}
 }
 ```
+
 ## v-on的参数问题：
+
 ```vue
 <!-- 1.事件调用的方法没有参数 -->
 <button @click="btn1Click()">按钮1</button>
@@ -33,7 +36,9 @@ methods: {
 <!-- 手动获取 浏览器的 event对象    加$event -->
 <button @click="btn3Click(123,$event)">按钮3</button>
 ```
+
 ## v-on的修饰符:
+
 ```vue
 <!-- 1. .stop 修饰符的使用 阻止事件冒泡 -->
 <div @click="divClick">

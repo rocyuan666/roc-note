@@ -1,4 +1,5 @@
 ## 基本使用：
+
 ```vue
 <img v-bind:src="imgUrl" alt="">
 <a v-bind:href="aUrl">{{aName}}</a>
@@ -13,7 +14,9 @@ data: {
   aUrl: "http://www.baidu.com"
 }
 ```
+
 ## v-bind动态绑定class(对象语法)：
+
 ```vue
 .act{color:#f00;}
 
@@ -25,7 +28,9 @@ data: {
   isActive: true
 },
 ```
+
 ## v-bind动态绑定class(数组语法)：
+
 ```vue
 .aaa{}
 .bbb{}
@@ -39,7 +44,9 @@ data: {
   line: 'bbb'
 }
 ```
+
 ## v-bind动态绑定style(对象语法)：
+
 ```vue
 <h2 :style="{fontSize: this.size + 'px', backgroundColor: this.bgc}">{{message}}</h2>
 
@@ -49,7 +56,9 @@ data: {
   bgc: '#f00'
 },
 ```
+
 ## v-bind动态绑定style(数组语法)：
+
 ```vue
 <h2 :style="[baseStyle]">{{message}}</h2>
 data: {

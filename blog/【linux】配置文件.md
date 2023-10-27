@@ -1,5 +1,7 @@
 ## profile文件环境变量配置
+
 位置：/etc/profile
+
 ```bash
 # /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
 # and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
@@ -51,11 +53,15 @@ export PATH=${MAVEN_HOME}/bin:$PATH
 
 
 ```
+
 ![](assets/【linux】配置文件/1.jpg)
+
 ## .bashrc文件配置
+
 位置：/home/(username)/.bashrc
 解决每次需要source /etc/profile配置才生效
 .baserc文件添加 source /etc/profile
+
 ```bash
 #解决每次需要source /etc/profile配置才生效
 source /etc/profile

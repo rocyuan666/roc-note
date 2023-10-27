@@ -12,12 +12,14 @@ const el = (
   </h1>
 );
 ```
+
 ## jsx中嵌入表达式
 
 ```jsx
 const name = "RocYuan";
 const el = <p>{name}</p>
 ```
+
 ## jsx中添加class属性等
 
 ```jsx
@@ -35,11 +37,13 @@ const element = <img src={ user.avatarUrl } />;
 
 ...其他属性嵌入皆可用{}
 ```
+
 ## jsx中绑定事件
 
 ```jsx
 <button onClick={ e => console.log(点击了按钮) }>按钮</button>
 ```
+
 ## jsx条件渲染
 
 React 中的条件渲染和 JavaScript 中的一样，使用 JavaScript 运算符 if 或者条件运算符来创建元素来表现当前的状态，然后让 React 根据它们来更新 UI。完全可以模拟vue中的v-if 、v-show…
@@ -67,6 +71,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
+
 ## jsx中列表渲染及key
 
 渲染列表我门可以使用map方法
@@ -93,11 +98,13 @@ class App extends React.Component {
   }
 }
 ```
+
 ## jsx中表单元素
 
 React 中，可变状态（mutable state）通常保存在组件的 state 属性中，并且只能通过使用this.setState()来更新。
 
 [https://react.docschina.org/docs/forms.html](https://react.docschina.org/docs/forms.html)
+
 ## 渲染
 
 元素渲染使用react-dom中的render函数渲染。
@@ -121,6 +128,7 @@ ReactDOM.render(
   document.getElementById("root");
 )
 ```
+
 ## jsx的本质
 
 实际上，jsx是FB为我们提供的一种语法糖，Babel 会把 JSX 转译成React对象中的createElement方法（当然我们也可以直接调用它，不使用jsx），vue3中的Vue.h()方法也是借鉴这的。

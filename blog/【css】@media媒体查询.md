@@ -1,5 +1,6 @@
 使用@media媒体查询响应式兼容判断
 @media(条件){……}
+
 ```css
 彩色屏幕和最小宽度1000下
 @media only screen and (min-width:1000px){#wrap{}}

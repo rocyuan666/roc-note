@@ -3,14 +3,18 @@ Vue Router 个人常用整理
 [https://router.vuejs.org/zh](https://router.vuejs.org/zh/)
 
 ## 路由安装与导入
+
 ```javascript
 安装：
 npm install vue-router --save
 导入：
 import VueRouter from 'vue-router'
 ```
+
 ## 路由基本使用
+
 ### 1.配置路由映射关系之前需准备
+
 ```javascript
 1）注册
 Vue.use(VueRouter)
@@ -21,7 +25,9 @@ const router = new VueRouter({
 3）将router对象传入Vue实例中(在main.js中导入，传入Vue实例中)
 export default router
 ```
+
 ### 2.配置路由映射
+
 ```javascript
 1）创建路由组件
 创建所需要转跳的.vue组件，比如创建Home.vue和Profile.vue
@@ -43,7 +49,9 @@ const routes = [
 <router-link to="/home"></router-link>
 <router-link to="/profile"></router-link>
 ```
+
 ### 3.路由重定向（redirect）使用
+
 ```javascript
 const routes = [
   {
@@ -60,20 +68,26 @@ const routes = [
   }
 ]
 ```
+
 ### 4.router-link属性
-```javascript
+
+```
 1）tag="button"（默认渲染为a标签）
 2）replace 禁止浏览器返回按钮（默认可以返回）
 3）active-class="active" （更改活跃状态class，默认为“router-link-active”）
 ```
+
 ### 5.不用router-link，使用代码转跳
+
 ```javascript
-可以点击浏览器的返回按钮:
+// 可以点击浏览器的返回按钮:
 this.$router.push('/home')
-不可以点击浏览器的返回按钮:
+// 不可以点击浏览器的返回按钮:
 this.$router.replace('/home')
 ```
+
 ### 6.实例router对象时常用配置
+
 ```javascript
 const router = new VueRouter({
   routes,  //路由映射配置
@@ -81,9 +95,12 @@ const router = new VueRouter({
   newVueRouter: 'active'  //更改活跃状态class
 })
 ```
+
 ## 动态路由
+
 动态路由官网文档：
 [https://router.vuejs.org/zh/guide/essentials/dynamic-matching.html](https://router.vuejs.org/zh/guide/essentials/dynamic-matching.html)
+
 ```javascript
 const routes = [
   {
@@ -100,13 +117,17 @@ toProfile(){
 // 2.profile.vue中拿到userName（注意是$route不是$router）：
 this.$route.params.userName
 ```
-$router与$route区别？
-$router：new出来的VueRouter
-$route：处于活跃的那个路由
+
+\$router与\$route区别？
+\$router：new出来的VueRouter
+\$route：处于活跃的那个路由
+
 ## 路由参数传递
+
 官方文档：
 [https://router.vuejs.org/zh/guide/essentials/passing-props.html](https://router.vuejs.org/zh/guide/essentials/passing-props.html)
-```javascript
+
+```
 1. params的类型（以上方式）：动态路由方式（this.$route.params.userName）
 2. query的类型：(this.$route.query.userName)
 
@@ -123,8 +144,10 @@ toProfile(){
 2. profile.vue中拿数据
 this.$route.query.userName
 ```
+
 ## 路由嵌套使用(children)
-```javascript
+
+```
 const routes = [
   {
     path: '/home',
@@ -141,9 +164,12 @@ const routes = [
 路由映射配置中:children: []
 Home组件中:<router-link to='/home/news'><router-view/>
 ```
+
 ## keep-alive
+
 keep-alive所包裹的动态组件会被缓存，当离开某个组件，不会让组件频繁创建销毁
-```javascript
+
+```
 <keep-alive exclude="name(组件的name属性值)">
   <router-view></router-view>
 </keep-alive>
@@ -156,17 +182,23 @@ keep-alice包裹的组件转跳会触发一下钩子方法，没有keep-alice,�
 activated：是在被包裹组建被激活的状态下使用的生命周期钩子
 deactivated：在被包裹组件停止使用时调用
 ```
+
 ## 路由懒加载
+
 官方文档：
 [https://router.vuejs.org/zh/guide/advanced/lazy-loading.html](https://router.vuejs.org/zh/guide/advanced/lazy-loading.html)
+
 ```javascript
 常用：
 const Home = () => import("/components/Home")
 ```
+
 ## 导航守卫
+
 官方文档：
 [https://router.vuejs.org/zh/guide/advanced/navigation-guards.html](https://router.vuejs.org/zh/guide/advanced/navigation-guards.html)
-```javascript
+
+```
 举个栗子：使用beforeEach改变页面title
 {
   path: '/home',

@@ -3,14 +3,21 @@
 网站全灰，
 一行代码，
 即可搞定。
+
 ### bilibili：
+
 ```css
 -webkit-filter: grayscale(.95);
 ```
+
 ![](assets/【css】4月4网站全灰，只要一行代码/1.png)
+
 可能会有人说，哎~，头部图还是灰色的啊，其实呀他就是一张灰色的图片！
+
 ![](assets/【css】4月4网站全灰，只要一行代码/2.png)
+
 ### 百度：
+
 ```css
 filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
 -webkit-filter: grayscale(100%); 
@@ -20,10 +27,13 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
 filter: grayscale(100%); 
 filter: gray;
 ```
+
 ![](assets/【css】4月4网站全灰，只要一行代码/3.png)
-在下看的比较知名的网站，bilibili ，百度，4399，luojing.top[手动狗头，嘿嘿]….等网站发现实现方法其实就是css3中滤镜的应用，就不往出贴了。
+
+在下看的比较知名的网站，bilibili ，百度，4399….等网站发现实现方法其实就是css3中滤镜的应用，就不往出贴了。
 但是这个属性的兼容性并不是很好，google了下还是有解决方法的：
 兼容大部分浏览器写法：
+
 ```css
 html{
     filter: grayscale(100%);
@@ -42,8 +52,11 @@ html{
   }
 </script>
 ```
+
 ### css3filter(滤镜)：
+
 接下来咱们就来看下filter，它有以下这些：
+
 ```css
 blur(0px)：模糊值 | 默认值为0(正常图像)
 brightness(100%)：亮度 | 默认值为100%(正常图像) 0%全黑

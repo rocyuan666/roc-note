@@ -1,5 +1,7 @@
 常用vue项目依赖记录，前面项目记录过的依赖后者不再记录，只补充。
+
 # vue-element-admin
+
 ```json
 "dependencies": {
   "axios": "0.18.1",
@@ -31,6 +33,7 @@
   "xlsx": "0.14.1"
 },
 ```
+
 clipboard  复制到剪贴板
 codemirror  web代码编辑器
 driver.js  web网页用户引导
@@ -48,7 +51,9 @@ vue-count-to  数字滚动
 vue-splitpane  拆分窗格组件，可以垂直或水平拆分
 vuedraggable  vue可拖动组件
 xlsx  电子表格数据解析器和编写器
+
 # vue-admin-beautiful（admin-pro）
+
 ```json
 "dependencies": {
   "@logicflow/core": "^0.7.0",
@@ -87,13 +92,16 @@ xlsx  电子表格数据解析器和编写器
   "zx-markdown-editor": "^0.0.2"
 },
 ```
+
 jsencrypt  用于执行RSA加密、解密和密钥生成的Javascript库
 jsplumb  流程图
 qs  query字符串解析和字符串化库
 resize-detector  元素大小检测
 vue-json-viewer  json内容展示
 vab-quill  富文本编辑器
+
 # renren（security-enterprise-admin）
+
 ```json
 "dependencies": {
   "axios": "^0.19.2",
@@ -124,11 +132,14 @@ vab-quill  富文本编辑器
   "xe-utils": "^2.6.5"
 },
 ```
+
 quill  强大的富文本编辑器
 vue-cron  cron表达式生成插件
 vxe-table  基于 vue 的 PC 端表格组件，支持增删改查、虚拟列表、虚拟树、懒加载、快捷菜单、数据校验、打印导出、表单渲染、数据分页、弹窗、自定义模板、渲染器、贼灵活的配置项、扩展接口等...
 xe-utils  JavaScript 函数库、工具类 [https://x-extends.github.io/xe-utils/](https://x-extends.github.io/xe-utils/)
+
 # d2-admin
+
 ```json
 "dependencies": {
   "@d2-projects/vue-table-export": "^1.1.2",
@@ -169,6 +180,7 @@ xe-utils  JavaScript 函数库、工具类 [https://x-extends.github.io/xe-utils
   "vuex": "^3.1.2"
 },
 ```
+
 better-scroll  移动端（已支持PC端）各种滚动场景需求的插件
 countup.js  数字滚动（vue-element-admin 中有 vue-count-to）
 highlight.js  语法高亮插件，自动语言检测
@@ -180,6 +192,4 @@ ua-parser-js  检测浏览器、引擎、操作系统、CPU和设备类型/型�
 vue-grid-layout  网格布局系统，可拖拽
 vue-json-tree-view  JSON树视图组件
 vue-ueditor-wrap  一个“包装”了 UEditor 的 Vue 组件，支持通过 v-model 来绑定富文本编辑器的内容，让 UEditor 的使用简单到像 Input 框一样。
-
-
 vue-cropper 图片裁剪插件

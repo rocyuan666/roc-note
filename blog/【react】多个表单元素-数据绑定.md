@@ -1,5 +1,6 @@
 做判断的办法这里就不说了，地球人都知道。
 有一种比较简单的方案，看代码：
+
 ```jsx
 class App extends React.Component {
   constructor(props) {
@@ -30,6 +31,7 @@ class App extends React.Component {
   }
 }
 ```
+
 利用e.target.name作为data的key，改变data数据，这样写_changeInput方法就不用改动。
 **注意：元素的name属性必须与data的key一致**。
 看效果：

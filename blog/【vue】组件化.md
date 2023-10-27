@@ -1,4 +1,5 @@
 ## 基本使用（全局组件）：
+
 ```vue
 // 1. 创建组件构造器对象
 const cpnC = Vue.extend({
@@ -18,7 +19,9 @@ Vue.component('my-cpn', cpnC);
 <my-cpn></my-cpn>
 <my-cpn></my-cpn>
 ```
+
 ## 组件的全局组件和局部组件:
+
 ```vue
 const app = new Vue({
 	el: '#app',
@@ -35,7 +38,9 @@ const app2 = new Vue({
 	el: '#app2'
 })
 ```
+
 ## 父组件和子组件：
+
 ```vue
 // 创建第一个组件 （第二个组件的子组件）
 const cpnC1 = Vue.extend({
@@ -70,7 +75,9 @@ const app = new Vue({
 	}
 })
 ```
+
 ## 组件的简写组件：
+
 ```vue
 // 省略了 Vue.extend({})
 // 全局组件（简便语法）
@@ -101,7 +108,9 @@ const app = new Vue({
 	}
 })
 ```
+
 ## 组件模板的分离写法：
+
 ```vue
 <!-- 1.script标签写法 -->
 创建 -> 注册 -> 使用
@@ -139,7 +148,9 @@ Vue.component('cpn2', {
 
 <cpn2></cpn2>
 ```
+
 ## 组件中的数据存放(存放在data方法的返回值，对象中)：
+
 ```vue
 <template id="cpn1">
 	<div>

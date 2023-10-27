@@ -17,6 +17,7 @@
   win.addEventListener('load', setFont, false);
 })(window, document);
 ```
+
 k= 宽度
 若设计稿按照750设计，k=750；设计稿640，k=640… ；
 使用时，ps中量取的 px/100 即是rem

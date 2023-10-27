@@ -1,11 +1,17 @@
 wxjsSDK官方文档：[https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#1](https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#1)
+
 公众号后台需设置“JS接口安全域名”！
+
 # 安装jweixin-module
+
 ```bash
 npm install jweixin-module
 ```
+
 # 使用
+
 以下例子为 h5微信支付
+
 ```javascript
 const jweixin = require('jweixin-module');
 const { payJssdkBuildConfig } = require('@/api/pay');

@@ -1,7 +1,11 @@
 官方文档：
+
 [https://developers.weixin.qq.com/miniprogram/dev/api/](https://developers.weixin.qq.com/miniprogram/dev/api/)
+
 ### 网络请求
+
 微信提供了专属的API接口,用于网络请求: wx.request({})
+
 ```vue
 //无参数GET
 wx.request({
@@ -31,10 +35,13 @@ wx.request({
   }
 })
 ```
+
 ### 网络请求封装
+
 通过promise封装wx.request()
+
 ```vue
-network.js(也可对baseURL，timeout进行统一管理封装，这里不演示了):
+// network.js(也可对baseURL，timeout进行统一管理封装，这里不演示了):
 export function request(option){
   return new Promise((resolve, reject) => {
     wx.request({
@@ -52,8 +59,8 @@ export function request(option){
   })
 }
 
-应用：
-page.js
+// 应用：
+// page.js
 import { request } from "network"
 
 request({
@@ -64,8 +71,11 @@ request({
   console.log(err)
 })
 ```
+
 ### 弹窗展示
+
 小程序中展示弹窗有四种方式: showToast、showModal、showLoading、showActionSheet
+
 ```vue
 wxml:
 <button size="mini" bindtap="onToastClick">showToast</button>
@@ -131,13 +141,16 @@ onActionSheelClick(){
   })
 }
 ```
+
 ### 页面分享
+
 分享是小程序扩散的一种重要方式，小程序中有两种分享方式：
 
 - 点击右上角的菜单按钮，之后点击转发
 - 点击某一个按钮，直接转发
 
 当我们转发给好友一个小程序时，通常小程序中会显示一些信息； 通过 onShareAppMessage 设置展示信息
+
 ```vue
 page.wxml:
 <button size='mini' open-type='share'>分享</button>
@@ -151,6 +164,7 @@ onShareAppMessage(option){
   }
 }
 ```
+
 ### 小程序的登录流程
 
 - 调用wx.login获取code
@@ -159,10 +173,15 @@ onShareAppMessage(option){
 - 请求需要登录态标识的接口时，携带token
 
 ![](assets/【微信小程序】系统API相关/1.png)
+
 ### 界面转跳（路由）
+
 界面的跳转有两种方式：**通过navigator组件 **和 **通过wx的API跳转**
+
 **navigators**设置文档：
+
 [https://developers.weixin.qq.com/miniprogram/dev/component/navigator.html](https://developers.weixin.qq.com/miniprogram/dev/component/navigator.html)
+
 ```vue
 <!-- 1.navigator页面跳转 -->
 <navigator url='/pages/detail/detail'>跳到详情页</navigator>
@@ -198,7 +217,9 @@ onUnload: function (){
   })
 }
 ```
+
 **wx的路由API**
+
 ```vue
 <!-- 4.通过代码进行页面跳转 返回 -->
 <button size='mini' bind:tap="handlePushDetail">跳到详情页</button>

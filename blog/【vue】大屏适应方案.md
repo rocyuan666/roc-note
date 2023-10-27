@@ -1,9 +1,12 @@
 # 按比例缩放方案
+
 个人常用，原理是css3缩放属性
 已封装为组件发布至npm（vue2、vue3两种版本）
 [https://www.npmjs.com/package/vue2-scale-box](https://www.npmjs.com/package/vue2-scale-box)
 [https://www.npmjs.com/package/vue3-scale-box](https://www.npmjs.com/package/vue3-scale-box)
+
 ## vue-组件方案
+
 ```vue
 <template>
   <div
@@ -86,7 +89,9 @@ export default {
 </style>
 
 ```
+
 ## vue-mixins方案
+
 ```javascript
 // 屏幕适配 mixin 函数
 // * 默认缩放值
@@ -156,7 +161,9 @@ export default {
 };
 
 ```
+
 # rem
+
 ```javascript
 /*
   github 大数据可视化展板通用模板 中方案
@@ -170,8 +177,11 @@ $(document).ready(function () {
   });
 });
 ```
+
 # echart resize
+
 window变化 或 DOM变化需要改变
+
 ```javascript
 const myEchart = echarts.init(
   document.getElementById("xxx")
@@ -187,8 +197,11 @@ new ResizeObserver(() => {
   myEchart.resize();
 }).observe(this.$refs["xxx"]);
 ```
+
 # 动态单位方案
+
 定义fontSize方法
+
 ```javascript
 function fontSize(res) {
   let docEl = document.documentElement,
@@ -202,7 +215,9 @@ function fontSize(res) {
   return res * fontSize;
 }
 ```
+
 使用
+
 ```javascript
  legend: [
     {
@@ -217,7 +232,9 @@ function fontSize(res) {
     },
 ]
 ```
+
 窗口发生变化重绘图表
+
 ```javascript
 // 添加窗口大小改变监听事件，当窗口大小改变时，图表会重新绘制，自适应窗口大小
 window.addEventListener("resize", function() {

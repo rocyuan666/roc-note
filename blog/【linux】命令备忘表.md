@@ -1,4 +1,5 @@
 ## 1) 系统
+
 | uname | 显示 Linux 系统信息 |
 | --- | --- |
 | uname -r | 显示内核版本信息 |
@@ -14,6 +15,7 @@
 | finger username | 显示有关用户的信息 |
 
 ## 2) 硬件
+
 | dmesg | 显示启动消息 |
 | --- | --- |
 | cat /proc/cpuinfo | 显示有关 CPU 的更多信息，例如型号、型号名称、内核、供应商 ID |
@@ -29,6 +31,7 @@
 | badblocks -s /dev/xda | 测试磁盘上不可读的块 |
 
 ## 3) 用户
+
 | id | 显示活动用户的详细信息，例如 uid、gid 和组 |
 | --- | --- |
 | last | 显示系统中的最后一次登录 |
@@ -39,6 +42,7 @@
 | usermod | 用于更改/修改用户信息 |
 
 ## 4) 文件命令
+
 | ls -al | 列出文件 - 常规和隐藏文件及其权限。 |
 | --- | --- |
 | pwd | 显示当前目录文件路径 |
@@ -62,6 +66,7 @@
 | xargs | 从标准输入执行命令 |
 
 ## 5) 进程相关
+
 | ps | 显示当前活动的进程 |
 | --- | --- |
 | ps aux &#124; grep 'telnet' | 搜索进程 'telnet' 的 id |
@@ -79,6 +84,7 @@
 | pstree | 在树模型中可视化流程 |
 
 ## 6) 文件权限
+
 | chmod octal filename | 将文件的文件权限更改为八进制 |
 | --- | --- |
 | chmod 777 /data/test.c | 将 rwx 权限设置为所有者、组和所有人（有权访问服务器的其他所有人） |
@@ -89,6 +95,7 @@
 | chown owner-user:owner-group directory | 更改目录的所有者和组所有者 |
 
 ## 7) 网络
+
 | ip addr show | 显示 IP 地址和所有网络接口 |
 | --- | --- |
 | ip address add 192.168.0.1/24 dev eth0 | 将 IP 地址 192.168.0.1 分配给接口 eth0 |
@@ -103,6 +110,7 @@
 | netstat -pnltu | 显示所有活动的监听端口 |
 
 ## 8) 压缩/存档
+
 | tar -cf home.tar home<:code> | 从文件 'home' 创建名为 'home.tar' 的存档文件 |
 | --- | --- |
 | tar -xf files.tar | 提取存档文件“files.tar” |
@@ -110,18 +118,21 @@
 | gzip file | 压缩扩展名为 .gz 的文件 |
 
 ## 9) 安装软件包
+
 | rpm -i pkg_name.rpm | 安装一个 rpm 包 |
 | --- | --- |
 | rpm -e pkg_name | 删除一个 rpm 包 |
 | dnf install pkg_name | 使用 dnf 实用程序安装软件包 |
 
 ## 10) 安装源（编译）
+
 | ./configure | 检查您的系统是否有构建程序所需的软件。它将构建包含有效构建项目所需的说明的 Makefile |
 | --- | --- |
 | make | 它读取 Makefile 以编译具有所需操作的程序。该过程可能需要一些时间，具体取决于您的系统和程序的大小 |
 | make install | 该命令在编译后将二进制文件安装在默认/修改路径中 |
 
 ## 11) 搜索
+
 | grep 'pattern' files | 在文件中搜索给定的模式 |
 | --- | --- |
 | grep -r pattern dir | 递归搜索给定目录中的模式 |
@@ -130,6 +141,7 @@
 | find /home -size +10000k | 在主文件夹中查找大于 10000k 的文件 |
 
 ## 12) 登录
+
 | ssh user@host | 以用户身份安全连接到主机 |
 | --- | --- |
 | ssh -p port_number user@host | 使用指定端口安全连接到主机 |
@@ -137,11 +149,13 @@
 | telnet host | 通过 telnet 默认端口 23 连接到主机 |
 
 ## 13) 文件传输
+
 | scp file1.txt server2/tmp | 安全地将 file1.txt 复制到 /tmp 目录中的 server2 |
 | --- | --- |
 | rsync -a /home/apps  /backup/ | 将 /home/apps 目录中的内容与 /backup 目录同步 |
 
 ## 14) 磁盘使用情况
+
 | df -h | 显示已安装系统上的可用空间 |
 | --- | --- |
 | df -i | 显示文件系统上的空闲 inode |
@@ -151,6 +165,7 @@
 | mount device-path mount-point | 挂载设备 |
 
 ## 15)目录遍历
+
 | cd .. | 在目录树结构中上移一级 |
 | --- | --- |
 | cd | 将目录更改为 $HOME 目录 |

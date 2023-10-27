@@ -1,7 +1,11 @@
 ## JavaScript obfuscator
+
 JavaScript obfuscator 是一款功能强大的免费JavaScript混淆处理程序，包含多种功能，可为源代码提供保护。
+
 github：[https://github.com/javascript-obfuscator/javascript-obfuscator](https://github.com/javascript-obfuscator/javascript-obfuscator)
+
 ## 构建工具插件
+
 常用webpack与rollup的插件
 
 - Webpack plugin: [webpack-obfuscator](https://github.com/javascript-obfuscator/webpack-obfuscator)
@@ -12,7 +16,9 @@ github：[https://github.com/javascript-obfuscator/javascript-obfuscator](https:
 - Weex: [weex-devtool](https://www.npmjs.com/package/weex-devtool)
 - Malta: [malta-js-obfuscator](https://github.com/fedeghe/malta-js-obfuscator)
 - Netlify plugin: [netlify-plugin-js-obfuscator](https://www.npmjs.com/package/netlify-plugin-js-obfuscator)
+
 ## 选项
+
 ```javascript
 {
   compact: true,
@@ -70,7 +76,9 @@ github：[https://github.com/javascript-obfuscator/javascript-obfuscator](https:
   unicodeEscapeSequence: false
 }
 ```
+
 ## 选项说明
+
 ### `compact`
 
 Type: `boolean` Default: `true`

@@ -1,5 +1,7 @@
 ## 组件父传子：
+
 子组件中使用 props 接收父组件传过来的值。
+
 ```vue
 // 父传子:
 <div id="app">
@@ -45,8 +47,11 @@ const app = new Vue({
 	}
 })
 ```
+
 ## 组件子传父：
+
 子组件使用 $emit 发送 自定义事件并可携带参数，父组件使用绑定自定义事件触发自身定义的方法，在自身定义的方法中接收到携带的参数。
+
 ```vue
 <cpn @itemclick='btnClick'></cpn>
 
@@ -97,8 +102,11 @@ const app = new Vue({
 	}
 })
 ```
+
 ## 父组件访问子组件：
+
 通过给子组件添加属性 ref ，父组件可以用 $refs 拿到子组件对象。
+
 ```vue
 <div id="app">
 	<cpn ref='bbb'></cpn>
@@ -119,8 +127,11 @@ methods: {
 	}
 },
 ```
+
 ## 子组件访问父组件（使用较少）：
+
 子组件使用 $parent 可访问到父组件对象，使用 $root 可访问到根组件
+
 ```vue
 methods: {						
 	btnClick(){

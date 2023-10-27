@@ -3,11 +3,14 @@
 
 - mac/linux 直接使用终端即可
 - windows推荐在git bash终端中操作
+
 ```bash
 # 生成1024位 RSA密钥
 openssl genrsa -out private.key 1024
 # 通过密钥生成公钥
 openssl rsa -in private.key -pubout -out public.key
 ```
+
 会在终端当前目录下生成公私钥。
+
 ![](assets/【RSA加密】生成RS256公私钥/1.png)

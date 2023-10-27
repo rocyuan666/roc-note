@@ -22,7 +22,8 @@ function padLeftZero (str) {
   return ('00' + str).substr(str.length);
 };
 ```
-参数说明：
+
+**参数说明：**
 formatDate(date, fmt)
 date: 时间对象
 fmt: 对应时间戳返回的时间格式，如下：

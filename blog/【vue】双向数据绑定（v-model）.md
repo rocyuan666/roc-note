@@ -1,4 +1,5 @@
 ## 基本使用：
+
 ```vue
 <!-- input中改变message值，都同步改变，反之一样 -->
 <input type="text" v-model="message">
@@ -9,7 +10,9 @@ data: {
 	message: '你好啊'
 }
 ```
+
 ## v-model原理：
+
 ```vue
 <!-- input值发生变化时触发clickChange方法 -->
 <input type="text" :value="message" @input="clickChange($event)">
@@ -24,7 +27,9 @@ methods: {
 	}
 }
 ```
+
 ## v-model结合radio类型:
+
 ```vue
 <!-- v-model相同不用 name 属性 -->
 <label for="male">
@@ -42,7 +47,9 @@ data: {
 	sex: '男'
 }
 ```
+
 ## v-model结合checkbox类型：
+
 ```vue
 <!-- 单个复选框，绑定到布尔值： -->
 <label for="agree">
@@ -65,7 +72,9 @@ data: {
 	hobbies: []
 }
 ```
+
 ## v-model结合select类型：
+
 ```vue
 <!-- 选择一个 -->
 <select name="abc" v-model="fruit">
@@ -91,7 +100,9 @@ data: {
 	fruits: ['香蕉']
 }
 ```
+
 ## v-model修饰符的使用：
+
 ```vue
 <!-- 1. .lazy: 失去焦点的时候更新 message -->
 <input type="text" v-model.lazy="message">

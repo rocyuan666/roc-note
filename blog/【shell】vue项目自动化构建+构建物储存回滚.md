@@ -1,4 +1,5 @@
 ## 构建更新，储存每次构建物
+
 ```shell
 #!/bin/sh
 
@@ -45,7 +46,9 @@ rm -rf ${dir_name}
 echo "构建更新完成"
 
 ```
+
 ## 构建物回滚
+
 ```shell
 #!/bin/sh
 

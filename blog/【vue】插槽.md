@@ -1,4 +1,5 @@
 ## 默认插槽：
+
 ```vue
 <child-component>rocyuan</child-component>
 
@@ -13,7 +14,9 @@ Vue.component('child-component',{
 
 // 将 child-component 中的内容会插入到 slot 中
 ```
+
 ## 具名插槽：
+
 ```vue
 <child-component>
     <h1 slot="center">中间的</h1>
@@ -32,8 +35,11 @@ Vue.component('child-component',{
     `
 })
 ```
+
 ## 作用域插槽：
+
 也可理解为带数据的插槽；如果我们v-for循环渲染表格，表格每行都有本行的数据，有一列是需要进行功能操作数据的，这样我们就可以使用作用域插槽拿到本行的数据进行操作
+
 ```vue
 已被废弃:
 <slot-example>

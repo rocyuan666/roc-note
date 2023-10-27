@@ -17,6 +17,7 @@ class APP extends React.Component {
   }
 }
 ```
+
 ## 修改state—setState
 
 要修改组件state必须使用react对象中Component提供的setState()方法,不能直接修改state，这样视图不会更新。
@@ -48,6 +49,7 @@ class APP extends React.Component {
 以上可以看到我们使用this.setState()方法，但是我们App类并未实现setState方法，原因是我们App类继承了React.Component类，而react的Component类原型有setState方法。setState方法传参后面详细分析。
 
 ![](assets/【react】state与生命周期/1.png)
+
 ## 组件生命周期
 
 组件生命周期则是组件从创建到销毁的过程

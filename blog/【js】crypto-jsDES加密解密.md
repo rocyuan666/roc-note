@@ -1,11 +1,16 @@
 我的应用场景后端对接口数据进行DES加密，前端需要解密，前后端需统一key值，加密方式，填充方式以及返回数据编码（我这是base64）；于是使用到了crypto-js库，使用这个库时候。需要将数据转换成它内部的数据类型wordArray，解密出来的数据也是wordArray需要转换，crypto-js库内部提供转换方法。
 加密的数据：
+
 ![](assets/【js】crypto-jsDES加密解密/1.png)
+
 # 安装crypto-js
+
 ```bash
 npm install crypto-js
 ```
+
 # DES加密解密
+
 ```javascript
 import CryptoJS from "crypto-js";
 

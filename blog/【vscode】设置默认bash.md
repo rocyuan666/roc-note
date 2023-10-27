@@ -1,4 +1,5 @@
 settings.json文件
+
 ```json
 {
   "terminal.integrated.profiles.windows": {
