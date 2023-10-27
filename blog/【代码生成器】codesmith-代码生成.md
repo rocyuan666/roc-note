@@ -1,10 +1,10 @@
-# 下载
+## 下载
 
 百度网盘下载：  
 链接：[https://pan.baidu.com/s/1l3OWoOEcLkjxGLPBpbJWOg?pwd=8zgv ](https://pan.baidu.com/s/1l3OWoOEcLkjxGLPBpbJWOg?pwd=8zgv )  
 提取码：`8zgv`
 
-# 配置
+## 配置
 
 1. 下载 `MySql.Data.dll` 文件（压缩包内有）  
 下载地址:   
@@ -36,7 +36,7 @@ server=172.0.0.1;User ID=root;Password=root;database=DB_NAME;
 
 8. 编写模板，在 `Properties` 面板中选择数据库表，进行代码生成。
 
-# 示例代码
+## 示例代码
 
 示例模板代码：  
 [https://github.com/rocyuan666/codesmith_template](https://github.com/rocyuan666/codesmith_template)
