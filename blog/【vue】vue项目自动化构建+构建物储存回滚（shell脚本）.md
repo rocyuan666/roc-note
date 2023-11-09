@@ -7,10 +7,17 @@ dir_name="project_dir_name" # 克隆项目到本地的文件夹名
 git_path="git clone url" # 项目的 git clone 地址
 git_branch="master" # 项目的 git 分支
 vue_build_dir_name="dist" # vue项目配置打包后的目录名 一般是 dist
-vue_build_script="build" # vue项目配置打包的脚本 一般是 build
+vue_build_script="build:prod" # vue项目配置打包的脚本 一般是 build
 
 save_tar_dir="dist_files" # 存放所有构建物文件
 remote_files="favicon.ico index.html index.html.gz assets" # 需要删除跟站点下的文件
+
+if [ $# == 0 ]
+then
+  vue_build_script="build:prod"
+else
+  vue_build_script=$1
+fi
 
 rm -rf ${dir_name}
 echo "正在克隆代码..."
@@ -32,10 +39,10 @@ cd ../
 
 if [ ! -d ${save_tar_dir} ]
 then
-  mkdir -p ${save_tar_dir}
-  echo "存放所有构建物文件目录已创建"
+  mkdir -p ${save_tar_dir}
+  echo "存放所有构建物文件目录已创建"
 else
-  echo "存放所有构建物文件目录已存在"
+  echo "存放所有构建物文件目录已存在"
 fi
 
 mv ./${dir_name}/${tar_name}.tar ./
@@ -44,7 +51,6 @@ tar xvf ${tar_name}.tar
 mv ${tar_name}.tar ./${save_tar_dir}
 rm -rf ${dir_name}
 echo "构建更新完成"
-
 ```
 
 ## 构建物回滚
@@ -62,5 +68,4 @@ else
     tar xvf ${1}
     echo "使用了：${1} 构建物"
 fi
-
 ```
