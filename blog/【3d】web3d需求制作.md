@@ -35,3 +35,11 @@
 # 建模完成
 
 3D Builder 默认的源文件后缀为 `.3mf` ；创建好模型后为了在 `threejs` 中使用，需要另存为 `threejs` 支持的格式 `.glb` 或者 `.gltf` （我一般储存为 `.glb` ）。
+
+![](./assets/【3d】web3d/6.jpg)
+
+![](./assets/【3d】web3d/7.jpg)
+
+![](./assets/【3d】web3d/8.jpg)
+
+# 创建Threejs
