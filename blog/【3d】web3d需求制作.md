@@ -43,3 +43,19 @@
 ![](./assets/【3d】web3d/8.jpg)
 
 # 创建Threejs
+threejs官方文档：
+[three.js docs (threejs.org)](https://threejs.org/docs/index.html#manual/zh/)
+使用起来比较复杂繁琐，参考官方示例项目完成一款方便完成需求的编辑器。
+
+编辑器github地址：[threejs-tool](https://github.com/rocyuan666/threejs-tool)
+
+![](./assets/【3d】web3d/9.jpg)
+
+举例：3d文字变化
+左下方选择 `GLB模型` 将我们创建的3d场景导入进来，创建 `文本` 放入3d场景中，将文字拖动至需要展示的地方；通过填写右侧 `绑定` 下的属性 `显示值` （接口返回数据的key值）改变文字。以上项目需求的液位是通过创建 `立方体` 绑定 `缩放Y` 实现的；状态是通过添加 `圆锥` 、 `球体` 等 绑定 `颜色` 值实现（不同颜色代表不同状态）。
+
+![](./assets/【3d】web3d/11.jpg)
+
+# 查看预览
+
+访问 `/play` 路由访问。
