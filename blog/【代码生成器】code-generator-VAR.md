@@ -79,3 +79,5 @@ Please select the project type to create:
 
 ## 生成代码的使用
 将生成的代码（目录： `输出目录/项目名称/vue/*` ）复制到创建的项目中的 `src/*` 目录下，启动项目 `npm run dev` 可以看到效果；然后基于生成的代码进行二次开发即可。
+
+![](./assets/【代码生成器】code-generator-VAR/6.jpg)
